@@ -4,7 +4,7 @@
  * Description:       Custom Gutenberg blocks from ProCoders.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Procoders
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -33,7 +33,7 @@ add_action( 'init', 'create_block_procoders_blocks_block_init' );
 
 
 // register new Gutenberg blocks category
-function add_custom_block_categories( $categories, $post ) {
+function add_procoders_block_categories( $categories, $post ) {
 	$custom_category_one = array(
 		'slug' => 'procoders',
 		'title' => __( 'Procoders Blocks', 'my-plugin' ),
@@ -42,4 +42,4 @@ function add_custom_block_categories( $categories, $post ) {
 	array_unshift( $categories, $custom_category_one);
 	return $categories;
 }
-add_filter( 'block_categories_all', 'add_custom_block_categories', 10, 2 );
+add_filter( 'block_categories_all', 'add_procoders_block_categories', 10, 2 );
