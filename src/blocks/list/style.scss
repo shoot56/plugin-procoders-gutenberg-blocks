@@ -1,0 +1,13 @@
+.wp-block-procoders-block-list {
+    list-style:none;
+    --my-css-var: #C11F5A;
+    li {
+        &:before {
+            content: "•";
+            color: var(--my-css-var);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
