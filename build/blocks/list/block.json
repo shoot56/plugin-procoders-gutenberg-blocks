@@ -4,7 +4,7 @@
   "category": "text",
   "icon": "smiley",
   "description": "Example block written with ESNext standard and JSX support – build step required.",
-  "textdomain": "alecaddd-giveaway",
+  "textdomain": "procoders-blocks",
   "supports": {
     "html": false
   },

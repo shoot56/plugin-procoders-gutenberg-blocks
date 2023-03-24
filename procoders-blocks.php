@@ -36,7 +36,7 @@ add_action( 'init', 'create_block_procoders_blocks_block_init' );
 function add_procoders_block_categories( $categories, $post ) {
 	$custom_category_one = array(
 		'slug' => 'procoders',
-		'title' => __( 'Procoders Blocks', 'my-plugin' ),
+		'title' => __( 'Procoders Blocks', 'procoders-blocks' ),
 		'icon'  => 'admin-customizer',
 	);
 	array_unshift( $categories, $custom_category_one);
